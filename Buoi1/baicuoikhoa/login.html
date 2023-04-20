@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="form.css">
+    <script>
+        function JAVA() {
+          let x = document.forms["myForm"]["yourname"].value;
+          let y= document.forms["myForm"]["yourpass"].value;
+          if (x==""&&y==""){
+            alert(" KHÔNG ĐƯỢC BỎ TRỐNG GÌ HẾT!!" )
+            return false;
+         }
+          if (x == "") {
+            alert("NHẬP THIẾU TÊN KÌA BA!!");
+            return false;
+        }
+          if (y== "") {
+            alert(" NHẬP PASS ĐI BA!!");
+            return false;
+        }
+        }
+    </script>
+</head>
+<body>
+  
+  <div id="LOGIN">
+      <form name="myForm" action="/C:\Users\GAMING\OneDrive\Máy tính\123\baicuoikhoa\Halloween.html" onsubmit="return JAVA()" method="post" id="FORM">
+      <h2 class="tittle">TẠO TÀI KHOẢN<Nav></Nav></h2>
+      <div class="NAME">
+        <input type="text" name="yourname"; placeholder="TÊN ĐĂNG NHẬP" >
+      </div>
+      <div class="PASS"> 
+        <input type="password" name="yourpass"; placeholder="PASSWORD" >
+      </div>
+        <input type="submit" value="Đăng Kí" class="SUBMIT">
+  </div>
+</form>
+</body>
+</html>

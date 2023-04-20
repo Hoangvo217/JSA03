@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>STORE</title>
+    <link rel="stylesheet" href="style1.css">
+    <style>
+        body{font-family: "Helvetica", "Arial", sans-serif;}
+        *{box-sizing: border-box;}
+    </style>
+    <link rel="icon" type="image/x-icon" href="data:image/png;base64,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">
+</head>
+<body>
+    <div id="myNav" class="overlay">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <div class="overlay-content ">
+          <a href="Halloween.html">Halloween</a>
+          <a href="HELP.html">Help</a>
+          <a href="login.html">Sign Up</a> 
+        </div>
+      </div>
+      <div class="main" style="background-color: black;">
+        <span style="font-size:30px;cursor:pointer;color: white;" onclick="openNav()">&#9776; Menu </span>
+        <p class="tieudeshop vcl" > Free Shipping on Orders Over $50:Use Promo code: <span style="color: red;"> SHIP50 </span></p>
+      </div>
+    
+    <script>
+            function openNav() {
+              document.getElementById("myNav").style.height = "100%";
+            }
+            function closeNav() {
+              document.getElementById("myNav").style.height = "0%";
+            }
+    </script>
+    <div class="containershop">
+        <a style="margin-left: 170px;"><img src="data:image/png;base64,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" width="170px" ></a>
+        <div class="containershop1">
+        <h1 style="font-size: 18px; margin-top: 15px;margin-bottom: 5px;"><b> Trick Or Treat </b></h1> 
+        <p style="margin-top: 3px; "> Happy Halloween!!!</p>
+        </div>
+        <form  id="searchbox">
+            <input type="text" id="searchtext">
+            <button id="searchicon"><i class="fa-solid fa-magnifying-glass"></i></button>
+        </form>
+
+    </div>
+    <div style="margin-left:200px ;margin-right: 150px; ">
+        <p style="text-align: center; font-family: Arial;font-size: 19px; background-color: darkmagenta; color:white;height: 25px;">#1 Halloween costume store</p>
+        <img src="https://m.media-amazon.com/images/I/71reRMyAIfL._AC_SL1500_.jpg" width="1150px" style="border-bottom: 7px solid black;">
+        <h1 style="text-align: center;">-IMMORTAL MASK-</h1>
+        <div class="Product">
+            <div class="img3">
+                <img src="https://images.halloweencostumes.com/products/86439/1-2/adult-frenzy-mask--immortal-masks.jpg" width="250px" >
+                <a href="" class="flexing second">Adult Latex Frenzy Mask</a>
+                <p class="flexing">$59.99</p>
+            </div>
+            <div class="img3">
+                <img src="https://images.halloweencostumes.com/products/86436/1-2/adult-possessed-mask--immortal-masks.jpg" width="250px" >
+                <a href="" class="flexing second">Adult Latex Possessed Mask</a>
+                <p class="flexing">$49.99</p>
+            </div>
+            <div class="img3">
+                <img src="https://images.halloweencostumes.com/products/80438/1-2/adult-alien-3-4-mask-immortal-masks.jpg" width="250px" >
+                <a href="" class="flexing second">Adult Latex Alien Mask</a>
+                <p class="flexing">$60.99</p>
+            </div>
+            <div class="img3 mg">
+                <img src="https://images.halloweencostumes.com/products/80435/1-2/speechless-immortal-mask-0-0.jpg" width="250px" >
+                <a href="" class="flexing">Adult Latex Speechless Mask</a>
+                <p class="second" style="color: #333;margin-top: 0px;font-size: 17px;color: rgba(171, 4, 4, 0.804);">(special edition)</p>
+                <p class="flexing ">$49.99</p>
+            </div>
+            <div class="img3 mg">
+                <img src="https://images.halloweencostumes.com/products/80436/1-2/adult-vessel-mask--immortal-masks.jpg" width="250px">
+                <a href="" class="flexing second">Adult Latex Vessel Mask</a>
+                <p class="flexing"><s> $45.99</s> - <span style="color: rgba(171, 4, 4, 0.804);">$35.99</span> <span style="color: rgba(27, 138, 27, 0.99);">(OnSale)</span></p>
+            </div>
+            <div class="img3 mg">
+                <img src="https://images.halloweencostumes.com/products/80434/1-2/wretched-mask-0-0.jpg" width="250px">
+                <a href="" class="flexing second">Adult Latex Wretched Mask</a>
+                <p class="flexing">$41.99</p>
+            </div>
+        </div>
+    </div> 
+    <div class="footer" style="background-color: darkmagenta;" >
+        <div class="itemfooter more">
+            <h1 >SHOP</h1>
+            <p class="ABC">My Acount</p>
+            <p class="ABC">Terms & Conditions</p>
+            <p class="ABC">Customer Care</p>
+        </div>
+        <div class="itemfooter more">
+            <h1 >SECTION</h1>
+            <p class="ABC">Design</p>
+            <p class="ABC">Style</p>
+            <p class="ABC">Culture</p>
+        </div>
+        <div class="itemfooter more">
+            <h1 >GET HELP</h1>
+            <p class="ABC">Print Magazine</p>
+            <p class="ABC">archive</p>
+            <p class="ABC">Contact Us</p>
+        </div>
+    </div>
+</body>
+</html>
